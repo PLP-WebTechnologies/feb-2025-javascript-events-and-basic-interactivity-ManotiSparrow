@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitLife Gym</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to FitLife Gym</h1>
+    <img src="gym.image.jpg" alt="Gym Image" id="heroImage">
+  </header>
+
+  <!-- Join Button -->
+  <section>
+    <button id="joinButton">Join Now</button>
+  </section>
+
+  <!-- Tabs Section -->
+  <section class="tabs">
+    <button class="tabButton" data-target="programsTab">Programs</button>
+    <button class="tabButton" data-target="trainersTab">Our Trainers</button>
+    <button class="tabButton" data-target="membershipTab">Membership</button>
+  </section>
+
+  <!-- Tab Content -->
+  <div class="tabContent hidden" id="programsTab">
+    <h2>Our Workout Programs</h2>
+    <ul>
+      <li>Strength Training</li>
+      <li>Cardio Blast</li>
+      <li>Yoga & Flexibility</li>
+      <li>HIIT Sessions</li>
+    </ul>
+  </div>
+
+  <div class="tabContent hidden" id="trainersTab">
+    <h2>Meet Our Trainers</h2>
+    <ul>
+      <li>Alex Morgan - Strength Coach</li>
+      <li>Jamie Lee - Yoga Instructor</li>
+      <li>Chris Evans - HIIT Specialist</li>
+    </ul>
+  </div>
+
+  <div class="tabContent hidden" id="membershipTab">
+    <h2>Membership Options</h2>
+    <ul>
+      <li>Basic Plan - $30/month</li>
+      <li>Premium Plan - $50/month</li>
+      <li>VIP Access - $80/month</li>
+    </ul>
+  </div>
+
+  <!-- Signup Form -->
+  <section class="formSection">
+    <form id="signupForm">
+      <h2>Sign Up Today!</h2>
+      <input type="text" id="name" placeholder="Full Name" required><br>
+      <input type="email" id="email" placeholder="Email Address" required><br>
+      <input type="password" id="password" placeholder="Password (8+ characters)" required><br>
+      <button type="submit">Submit</button>
+      <div id="formFeedback"></div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
